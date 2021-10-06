@@ -8,31 +8,34 @@
 # # p "The #{shirt[:color]} costs $#{shirt[:price]} and comes in a size #{shirt[:size]}."
 
 class Item
+  attr_reader :color, :price, :size
+  attr_writer :color, :price, :size
+
   def initialize(color, price, size)
     @color = color
     @price = price
     @size = size
   end
 
-  def color=(text)
-    @color = text
-  end
+  # def color=(text)
+  #   @color = text
+  # end
 
   def color
     @color
   end
 
-  def price=(text)
-    @color = text
-  end
+  # def price=(text)
+  #   @color = text
+  # end
 
   def price
     @color
   end
 
-  def size=(text)
-    @color = text
-  end
+  # def size=(text)
+  #   @color = text
+  # end
 
   def size
     @size
